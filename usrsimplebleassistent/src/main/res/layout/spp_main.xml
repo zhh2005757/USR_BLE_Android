@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#009688"
+    android:orientation="vertical">
+
+    <include layout="@layout/spp_toolbar_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Tx:" />
+
+            <TextView
+                android:id="@+id/spp_tv_txdata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Rx:" />
+
+            <TextView
+                android:id="@+id/spp_tv_rxdata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#DC143C"
+                android:textSize="15dp"
+                android:id="@+id/clean_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="清空计数" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接时间：" />
+
+        <TextView
+            android:id="@+id/spp_tv_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备名称：" />
+
+        <TextView
+            android:id="@+id/spp_tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cod：" />
+
+        <TextView
+            android:id="@+id/spp_tv_cod"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备地址：" />
+
+        <TextView
+            android:id="@+id/spp_tv_adress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备类型：" />
+
+        <TextView
+            android:id="@+id/spp_tv_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uuid：" />
+
+        <TextView
+            android:id="@+id/spp_tv_uuid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="3dp"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dropdownbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:srcCompat="@mipmap/ic_option_more" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff" />
+
+        <EditText
+            android:id="@+id/Edit0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:hint="input content" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:onClick="onSendButtonClicked"
+            android:text="send"
+            android:textColor="#fff" />
+
+
+
+        <!--<LinearLayout-->
+
+            <!--android:id="@+id/senddata"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="onSendButtonClicked">-->
+            <!--<ImageButton-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/sended"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:onClick="onConnectButtonClicked"
+            android:text="断开"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_mode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:onClick="onSaveButtonClicked"
+            android:text="普通"
+            android:textColor="#FFE4E1" />
+
+        <Button
+            android:id="@+id/Button05"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:onClick="onClearButtonClicked"
+            android:text="清空"
+            android:textColor="#FFE4E1" />
+
+        <Button
+            android:id="@+id/Button06"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:onClick="onQuitButtonClicked"
+            android:text="ASCII"
+            android:textColor="#FFE4E1" />
+
+        <Button
+            android:id="@+id/Button07"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="定时"
+            android:textColor="#FFE4E1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/timingoption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#009688"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="发送间隔:"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/et_timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="1000" />
+
+        <Button
+            android:id="@+id/Button08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:padding="1dp"
+            android:text="确定"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/checkbox_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

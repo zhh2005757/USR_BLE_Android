@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="toobar_title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="AppTheme.TransparentAct">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MainTags">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#C5E5FB</item>
+        <item name="android:shadowColor">#666666</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_tag_main</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:drawablePadding">2dip</item>
+    </style>
+    <style name="Theme.FloatActivity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/float_box</item>
+    </style>
+
+    <style name="dialogstyle">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_tag_main_pressed" android:state_checked="true"></item>
+    <item android:drawable="@drawable/bg_tag_main_pressed" android:state_selected="true"></item>
+    <item android:drawable="@drawable/bg_tag_main_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/bg_tag_main_normal" android:state_checked="false"></item>
+    <item android:drawable="@drawable/bg_tag_main_normal" android:state_selected="false"></item>
+    <item android:drawable="@drawable/bg_tag_main_normal" android:state_pressed="false"></item>
+    <item android:drawable="@drawable/bg_tag_main_normal"></item>
+
+</selector>

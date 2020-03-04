@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/listview_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="正在下载更新包:"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/size_text_medium" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#fff"
+         android:text="0%"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/size_text_medium"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:max="100" />
+
+
+</LinearLayout>

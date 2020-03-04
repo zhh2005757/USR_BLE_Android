@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingTop="10dp"
+        android:textSize="22sp"
+        android:textColor="#424242"
+        android:text="@string/unkonw_service"
+        android:singleLine="true"
+        android:ellipsize="middle" />
+
+    <TextView
+        android:id="@+id/tv_service_uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/secondary_text"
+        android:singleLine="true"
+        android:ellipsize="middle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:background="@color/divider"/>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.usr.usrsimplebleassistent.ServicesActivity">
+
+    <include
+        layout="@layout/toolbar_top"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#009688">
+        <ImageView
+            android:id="@+id/iv_ble"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="32dp"
+            app:srcCompat="@mipmap/bluetooth_icon_big"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_ble"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME:TEST-DEV"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_service_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="MAC:FF-FF-FF-FF-Ff"
+                android:textSize="16sp"
+                android:textColor="#e1f5fe"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_service_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="#e1f5fe"
+                android:text="services:3"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_services"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:background="@android:color/white"
+            android:divider="@android:color/transparent"
+            android:alpha="0">
+        </ListView>
+        <View
+            android:id="@+id/view_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shape_shade_bottom"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="gone">
+        </View>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

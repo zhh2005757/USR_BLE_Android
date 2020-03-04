@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">蓝牙调试助手1</string>
+    <string name="devices">BlueDevice</string>
+    <string name="menu_usr">官网</string>
+    <string name="share">分享</string>
+    <string name="share_title">选择应用分享</string>
+    <string name="share_ex">未找到应用分享</string>
+
+    <string name="device_ble_not_supported">手机不支持低功耗蓝牙</string>
+    <string name="pull_down_refresh">下拉刷新</string>
+    <string name="unkonw_service">未知服务</string>
+
+    <!--<string name="gatt_services_read">Read</string>-->
+    <!--<string name="gatt_services_write">Write</string>-->
+    <!--<string name="gatt_services_notify">Notify</string>-->
+    <!--<string name="gatt_services_indicate">Indicate</string>-->
+
+    <string name="transmittal_length">最大传输字节为%s</string>
+</resources>

@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">USRBleAssistent</string>
+    <string name="devices">BLUE Devices</string>
+    <string name="menu_usr">Official Website</string>
+    <string name="share">Share</string>
+    <string name="share_title">Select app to share</string>
+    <string name="share_ex">Can\'t find share component to share</string>
+    <string name="menu_hex_send">HEX Send</string>
+    <string name="menu_asscii_send">ASSCII Send</string>
+    <string name="menu_clear_display">Clear Display</string>
+    <string name="menu_update">Update</string>
+    <string name="share_text">USRBleAssistent,Let BLE development easier.DownLoad:http://xxx.xxx.xxx</string>
+    <string name="option_fail">Operation failure</string>
+    <string name="alert">Alert</string>
+    <string name="conn_disconnected">Connect disconnect,please back to reconnect</string>
+    <string name="conn_disconnected_home">Connect disconnect,please reconnect</string>
+    <string name="ok">OK</string>
+
+    <string name="connect_fail">Connection failure</string>
+
+    <string name="searching">Searching</string>
+    <string name="search_device_count">Have searched %1$d devices</string>
+
+    <string name="device_ble_not_supported">device ble not supported</string>
+    <string name="pull_down_refresh">Pull down refresh</string>
+    <string name="title_activity_services">Services</string>
+    <string name="title_activity_characteritics">Characteritics</string>
+    <string name="unkonw_service">Unkonw Service</string>
+
+    <string name="gatt_services_read">Read</string>
+    <string name="gatt_services_write">Write</string>
+    <string name="gatt_services_notify">Notify</string>
+    <string name="gatt_services_indicate">Indicate</string>
+
+
+    <!-- Find Me profile elements -->
+    <string name="find_linkloss">Link Loss</string>
+    <string name="find_spinner_prompt">Select</string>
+    <string name="find_immediate_alert">Immediate Alert</string>
+    <string name="find_value_read_toast">Value read from kit: </string>
+    <string name="find_value_written_toast">Written </string>
+    <string name="find_value_success_toast"> successfully </string>
+
+    <!-- Blood pressure profile elements -->
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="blood_pressure_systolic">SYS</string>
+    <string name="blood_pressure_diastolic">DIA</string>
+    <string name="blood_pressure_start_btn">START</string>
+    <string name="blood_pressure_stop_btn">STOP</string>
+    <string name="blood_pressure_mmHg">mmHg</string>
+    <string name="blood_pressure_kPa"> kPa</string>
+
+    <!-- RSC profile elements -->
+    <string name="rsc_weight">Weight:</string>
+    <string name="rsc_weight_unit">kg</string>
+    <string name="rsc_time">Time:</string>
+    <string name="rsc_graph_title">Average Speed Vs Time</string>
+    <string name="rsc_calories">Calories burnt</string>
+    <string name="rsc_avg_speed">Avg Speed (km/h)</string>
+    <string name="rsc_avg_speed_unit">km/h</string>
+    <string name="rsc_distance_unit">km</string>
+    <string name="rsc_total_distance">Total Distance Ran</string>
+
+    <!-- CSC profile elements -->
+    <string name="csc_cadence">Cadence</string>
+    <string name="csc_cadence_graph">Cadence (rpm)</string>
+    <string name="csc_cadence_unit">rpm</string>
+    <string name="csc_distance_unit">Distance (km)</string>
+    <string name="csc_cadence_graph_title">Cadence Vs Time</string>
+    <string name="csc_cadence_graph_unit">Cadence (rpm)</string>
+    <string name="csc_total_distance">Total Distance Cycled</string>
+    <string name="csc_weight_toast">Enter a valid weight !</string>
+
+    <string name="csc_weight_toast_greater">Warning! The weight entered is greater than 200 kg</string>
+    <string name="csc_weight_toast_zero">Warning! The weight entered is less than 1 kg</string>
+    <string name="csc_weight_toast_empty">Warning!  No value entered in weight field</string>
+
+
+    <!-- Sensorhub profile elements -->
+    <string name="sen_hub">Sensor Hub</string>
+    <string name="sen_hub_locate">Locate Device</string>
+    <string name="sen_hub_locate_stop">Stop Alert</string>
+    <string name="sen_hub_accelerometer">Accelerometer</string>
+    <string name="sen_hub_accelerometer_x">X: </string>
+    <string name="sen_hub_accelerometer_Y">Y: </string>
+    <string name="sen_hub_accelerometer_Z">Z: </string>
+    <string name="sen_hub_temperature">Temperature</string>
+    <string name="sen_hub_temperature_unit">°C</string>
+    <string name="sen_hub_battery">Battery Level</string>
+    <string name="sen_hub_battery_unit">%</string>
+    <string name="sen_hub_pressure">Pressure</string>
+    <string name="sen_hub_pressure_unit">Kpa</string>
+    <string name="sen_hub_sensor_scan_interval">Sensor Scan Interval</string>
+    <string name="sen_hub_sensor_type">Sensor Type</string>
+    <string name="sen_hub_threshold">Threshold</string>
+
+    <string-array name="findme_immediate_alert_array">
+        <item>No Alert</item>
+        <item>Mid Alert</item>
+        <item>High Alert</item>
+    </string-array>
+    <string-array name="filter_configuration_alert_array">
+        <item>Select Filter Configuration</item>
+        <item>None</item>
+        <item>Average</item>
+        <item>Medium</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string name="send_to">Send to..</string>
+
+    <!-- Battery profile elements -->
+    <string name="battery_stop_notify">Stop Notify</string>
+    <string name="battery_start_notify">Start Notify</string>
+    <string name="battery_read">Read</string>
+
+    <!-- RDK profile elements -->
+    <string name="rdk_emulator_view">Remote Control RDK</string>
+    <string name="rdk_emulator_view_identifier">CY5672</string>
+    <string name="view_trackpad">VIEW TRACK PAD/MOTION SENSOR DATA</string>
+    <string name="view_microphone">VIEW MICROPHONE DATA</string>
+    <string name="volume">VOL</string>
+    <string name="channel">CH</string>
+    <string name="rdk_microphone">MICROPHONE DATA</string>
+    <string name="rdk_motion">TRACK PAD/MOTION SENSOR DATA</string>
+    <string name="property">PROPERTY</string>
+    <string name="format">FORMAT</string>
+    <string name="value">VALUE</string>
+    <string name="motion_x">X</string>
+    <string name="motion_y">Y</string>
+    <string name="motion_zwheel">Z-Wheel</string>
+    <string name="motion_tilt">Tilt</string>
+    <string name="motion_lcd">Left Click Down</string>
+    <string name="motion_lcu">Left Click Up</string>
+    <string name="motion_rcd">Right Click Down</string>
+    <string name="motion_rcu">Right Click Up</string>
+    <string name="motion_keycode">Keycode</string>
+    <string name="motion_default_value">00</string>
+    <string name="motion_clear">CLEAR COUNTERS</string>
+    <string name="motion_clear_data">CLEAR DATA</string>
+    <string name="speech_text">SPEECH TO TEXT</string>
+    <string name="record">RECORD</string>
+    <string name="hex">HEX</string>
+    <string name="record_stop">STOP</string>
+    <string name="convert">CONVERT</string>
+    <string name="change_api">CHANGE API KEY</string>
+     <string name="apikey_requirement_text">Please enter your developer API Key
+        for voice to text conversion</string>
+    <string name="volume_up">Volume Up</string>
+    <string name="volume_down">Volume Down</string>
+    <string name="channel_up">Channel Up</string>
+    <string name="channel_down">Channel Down</string>
+    <string name="power_on">On</string>
+    <string name="power_off">Off</string>
+    <string name="source">Source</string>
+
+    <string name="tag_running_app">BLE</string>
+    <string name="tag_running_service">SPP</string>
+    <string name="transmittal_length">Max transmittal data is %s</string>
+
+
+
+    <item type="id" name="onTiming"></item>
+    <item type="id" name="outTiming"></item>
+
+
+
+
+
+
+
+</resources>

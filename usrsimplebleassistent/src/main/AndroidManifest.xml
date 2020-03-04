@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.usr.usrsimplebleassistent">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 向SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.TransparentAct"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".BlueToothLeService.BluetoothLeService"
+            android:enabled="true" />
+        <service android:name=".BlueToothLeService.SppConnectService"
+            android:enabled="true"/>
+
+
+        <activity
+            android:name=".ServicesActivity"
+            android:screenOrientation="fullSensor"
+            android:label="@string/title_activity_services"
+            android:theme="@style/AppTheme.TransparentAct"/>
+
+        <activity android:name=".CharacteristicsActivity"
+            android:screenOrientation="fullSensor"
+            android:label="@string/title_activity_characteritics"
+            android:theme="@style/AppTheme.TransparentAct"/>
+
+        <activity android:name=".GattDetailActivity"
+            android:screenOrientation="fullSensor"
+            android:label=""
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.TransparentAct"/>
+        <activity android:name=".SPPBlueTooth.SppBlueThoothActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="UpdateActivity"
+            android:theme="@style/dialogstyle"/>
+
+    </application>
+
+</manifest>

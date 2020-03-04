@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.usr.usrsimplebleassistent.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/coll_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin"
+                android:titleTextColor="@android:color/white"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RadioGroup
+            android:id="@+id/rgTabButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/rbRunningApp"
+                style="@style/MainTags"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tag_running_app" />
+            <RadioButton
+                android:id="@+id/rbRunningService"
+                style="@style/MainTags"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tag_running_service" />
+        </RadioGroup>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginTop="50dp"
+            android:background="#fff"
+            android:id="@+id/vpContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <!--android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"-->
+        <!-- <android.support.v7.widget.RecyclerView
+             android:layout_marginTop="300dp"
+             android:id="@+id/recycleview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="3dp"
+             android:background="@drawable/shape_shade_bottom"/>-->
+    </RelativeLayout>
+
+
+    <com.usr.usrsimplebleassistent.views.RevealBackgroundView
+        android:id="@+id/reveal_background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+    <com.usr.usrsimplebleassistent.views.RevealSearchView
+        android:id="@+id/realsearchiew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/ic_search_white_36dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right|end"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_search_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_searching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="220dp"
+            android:text="@string/searching"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+
+        <TextView
+            android:id="@+id/tv_search_device_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="180dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_stop_searching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:background="@android:color/transparent"
+            android:text="Click Stop"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

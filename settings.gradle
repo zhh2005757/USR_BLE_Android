@@ -1,0 +1,2 @@
+include ':usrsimplebleassistent'
+rootProject.name='USR-BLE'

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#DE000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#536DFE</color>
+    <color name="background">#eceff1</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="main_bg">#f5f5f5</color>
+    <color name="color_bottom_option">#1de9b6</color>
+    <color name="color_yellow_dark">#fdd835</color>
+
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#B6B6B6</color>
+    <!-- 蓝色 -->
+    <color name="blue">#2EA2E4</color>
+    <!-- 绿色 -->
+    <color name="green">#0dab61</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 米色 -->
+    <color name="beige">#CDCDCD</color>
+    <!-- 浊色 -->
+    <color name="grey_light">#f3f3f3</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 红色 -->
+    <color name="red">#ff0000</color>
+    <!-- 深红色 -->
+    <color name="red_dark">#BE0E20</color>
+    <!-- 深蓝色 -->
+    <color name="blue_dark">#0C4A9A</color>
+    <!-- 灰色 -->
+    <color name="grey">#FF999999</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--橙色-->
+    <color name="orange">#EA5513</color>
+</resources>

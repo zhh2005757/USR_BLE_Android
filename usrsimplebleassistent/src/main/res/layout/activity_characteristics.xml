@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.usr.usrsimplebleassistent.CharacteristicsActivity">
+
+    <include
+        layout="@layout/toolbar_top"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_characteristics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:background="@android:color/white"
+            android:divider="@android:color/transparent"
+            android:visibility="gone"/>
+        <View
+            android:id="@+id/view_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shape_shade_bottom"
+            android:visibility="gone"/>
+        <View
+            android:id="@+id/view_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#009688"
+            android:visibility="gone">
+        </View>
+    </RelativeLayout>
+
+</LinearLayout>
